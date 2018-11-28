@@ -53,13 +53,18 @@ ul{
 /***********************************************
                 LAYOUT
 ***********************************************/
+.positionRel{
+    position: relative;
+}
+
+
 .bg-header{
     background-color: #fff;
     background-color:$blueA;
     color: $greyB;
     border-bottom:1rem solid $blueB;
     border-top:1rem solid $blueC;
-    position: relative;
+    @extend .positionRel;
 
 &:before,
 &:after{
@@ -98,7 +103,7 @@ ul{
 header{
     width: 400px; /* default min screen width */
     margin: 0 auto;
-    position: relative;
+    @extend.positionRel;
 }
 header h1{
     width: 100%;
@@ -125,7 +130,7 @@ section.content1{
     padding: 2rem 0;
 }
 section.content2{
-@extend .content1;    
+    padding:2rem 0;
 }
 .row{
     display: flex;

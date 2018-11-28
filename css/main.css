@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /***********************************************
                 COLOUR NOTES
 light blue  #C7F7FF
@@ -26,7 +25,7 @@ dark grey   #222
 
 html {
   font-size: 16px;
-  font-family: "Josefin Sans", ‘Trebuchet MS’, Helvetica, sans-serif;
+  font-family: "Josefin Sans", "Trebuchet MS", Helvetica, sans-serif;
   /* default for whole page */
   line-height: 1.6;
   font-weight: 400;
@@ -34,7 +33,7 @@ html {
 
 h1, h2, h3, h4 {
   font-weight: 700;
-  font-family: Cardo, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+  font-family: Cardo, "Palatino Linotype", "Book Antiqua", Palatino, serif;
   /* serif for the headings */
 }
 
@@ -48,13 +47,16 @@ ul {
 /***********************************************
                 LAYOUT
 ***********************************************/
+.positionRel, header, .bg-header {
+  position: relative;
+}
+
 .bg-header {
   background-color: #fff;
   background-color: #C7F7FF;
   color: #222;
   border-bottom: 1rem solid #89C0C9;
   border-top: 1rem solid #3a5E63;
-  position: relative;
 }
 .bg-header:before, .bg-header:after {
   content: "";
@@ -97,7 +99,6 @@ header {
   width: 400px;
   /* default min screen width */
   margin: 0 auto;
-  position: relative;
 }
 
 header h1 {
@@ -128,7 +129,11 @@ section.focal {
   margin: 0 auto;
 }
 
-section.content1, section.content2 {
+section.content1 {
+  padding: 2rem 0;
+}
+
+section.content2 {
   padding: 2rem 0;
 }
 
@@ -230,17 +235,17 @@ header h1 i.fa-lg ~ span {
   padding: 0.2rem 2rem 2rem;
 }
 
-.content1 h3, section.content2 h3 {
+.content1 h3 {
   font-size: 1.999rem;
   padding: 0.2rem 2rem 2rem;
 }
 
-.content1 h3 i, section.content2 h3 i {
+.content1 h3 i {
   vertical-align: middle;
   padding-right: 2rem;
 }
 
-.content1 p, section.content2 p {
+.content1 p {
   font-size: 1.414rem;
   padding: 0.5rem 2rem 2rem;
 }
@@ -410,7 +415,7 @@ footer {
     margin: 0 auto;
   }
 
-  .content1 .row, section.content2 .row {
+  .content1 .row {
     /* same as mobile default */
   }
 
@@ -552,7 +557,7 @@ footer .row {
     align-items: flex-start;
   }
 
-  .content1 .row .col, section.content2 .row .col {
+  .content1 .row .col {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 33%;
@@ -576,12 +581,12 @@ footer .row {
     flex-basis: 100%;
   }
 
-  section.content1 h3, section.content2 h3 {
+  section.content1 h3 {
     font-size: 1.999rem;
     font-weight: 100;
   }
 
-  section.content1 h3 .fa-2x, section.content2 h3 .fa-2x {
+  section.content1 h3 .fa-2x {
     font-size: 1.999rem;
     padding-right: 1rem;
   }
@@ -691,7 +696,7 @@ footer .row {
     align-items: flex-start;
   }
 
-  .content1 .row .col, section.content2 .row .col {
+  .content1 .row .col {
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 30%;
@@ -726,12 +731,12 @@ footer .row {
     margin: 0 auto;
   }
 
-  section.content1 h3, section.content2 h3 {
+  section.content1 h3 {
     font-size: 2.827rem;
     font-weight: 100;
   }
 
-  section.content1 h3 .fa-2x, section.content2 h3 .fa-2x {
+  section.content1 h3 .fa-2x {
     font-size: 2.827rem;
     padding-right: 1rem;
     vertical-align: middle;
