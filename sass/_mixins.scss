@@ -1,6 +1,24 @@
 @mixin flexin ($figA,$figB,$figC) {
-@content;
 flex-grow: $figA;
 flex-shrink: $figB;
 flex-basis: $figC;
+}
+
+@mixin small {
+    @media all and (min-width:701px) and (max-width:900px){
+        @content;
+    }
+    
+}
+@mixin medium {
+    @media all and (min-width:901px) and (max-width: 1400px){
+        @content;
+    }
+    
+}
+@mixin large {
+    @media all and (min-width:1401px){
+        @content;
+    }
+    
 }

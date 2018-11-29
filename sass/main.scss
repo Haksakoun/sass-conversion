@@ -322,7 +322,7 @@ footer h4[lang=ru]{
                 MEDIA QUERIES
 ***********************************************/
 
-@media all and (min-width:701px) and (max-width:900px){
+{
     header{
         width: 700px;
         margin: 0 auto;
@@ -429,7 +429,7 @@ footer h4[lang=ru]{
 
 
 
-@media all and (min-width:901px) and (max-width: 1400px){
+@include medium{
     header{
         width: 900px;
         margin: 0 auto;
@@ -550,7 +550,7 @@ footer h4[lang=ru]{
 }
 
 
-@media all and (min-width:1401px){
+@include large{
     header{
         width: 1400px;
         margin:0 auto;
