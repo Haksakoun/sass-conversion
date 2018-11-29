@@ -322,7 +322,7 @@ footer h4[lang=ru]{
                 MEDIA QUERIES
 ***********************************************/
 
-{
+@include small{
     header{
         width: 700px;
         margin: 0 auto;
